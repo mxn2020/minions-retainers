@@ -1,0 +1,41 @@
+{
+  "name": "@minions-retainers/cli",
+  "version": "0.1.0",
+  "description": "CLI for minions-retainers — Recurring service agreements, care plans, monthly retainers, and subscription management",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mxn2020/minions-retainers"
+  },
+  "homepage": "https://retainers.minions.help",
+  "keywords": {
+    {keywordsJson
+    }
+  },
+  "author": "Mehdi Nabhani <mehdi@the-mehdi.com> (https://the-mehdi.com)",
+  "type": "module",
+  "bin": {
+    "retainers": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "lint": "tsc --noEmit",
+    "dev": "node --loader ts-node/esm src/index.ts"
+  },
+  "dependencies": {
+    "@minions-retainers/sdk": "workspace:*",
+    "chalk": "^5.6.2",
+    "commander": "^14.0.3",
+    "inquirer": "^13.2.5",
+    "minions-sdk": "^0.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "typescript": "^5.9.3"
+  }
+}
