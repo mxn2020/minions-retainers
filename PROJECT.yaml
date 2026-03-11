@@ -5,3 +5,4 @@ description: "Recurring service agreements, care plans, monthly retainers, and s
 priority: high
 deploy_url: null
 tags: [minion, toolbox, ai-agent, automation, minions, retainers]
+category: minion-toolbox
